@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            TakeDamage(20);
+            TakeDamage(10);
         }
     }
 
