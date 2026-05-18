@@ -6,10 +6,19 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 8f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBarScript healthBar;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
 
     void Update()
     {
@@ -26,6 +35,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Flip();
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            TakeDamage(20);
+        }
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 
     private void FixedUpdate()
