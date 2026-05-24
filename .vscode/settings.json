@@ -29,7 +29,9 @@
     },
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
-    "editor.rulers": [100],
+    "editor.rulers": [
+        100
+    ],
     "editor.snippetSuggestions": "top",
     "C_Cpp.updateChannel": "Insiders",
     "csharp.format.enable": true,
@@ -38,16 +40,12 @@
     "omnisharp.useModernNet": true,
     "omnisharp.enableRoslynAnalyzers": true,
     "omnisharp.enableEditorConfigSupport": true,
-    "omnisharp.organizeImportsOnFormat": true,
-    "omnisharp.enableImportCompletion": true,
     "omnisharp.enableMsBuildLoadProjectsOnDemand": true,
     "omnisharp.loggingLevel": "information",
     "omnisharp.maxProjectFileCountForDiagnosticAnalysis": 1000,
-    "csharp.referencesCodeLens.enabled": true,
-    "csharp.testsCodeLens.enabled": true,
     "csharp.showReferencesCodeLens": true,
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Dark+",
     "window.restoreWindows": "preserve",
     "explorer.compactFolders": false,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
@@ -56,5 +54,9 @@
         "csharp": false
     },
     "chat.agent.enabled": false,
-    "dotnet.defaultSolution": "2026CT_Forest_Samuel.H.sln"
+    "dotnet.defaultSolution": "2026CT_Forest_Samuel.H.sln",
+    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+    "dotnet.codeLens.enableReferencesCodeLens": true,
+    "dotnet.codeLens.enableTestsCodeLens": true,
+    "dotnet.formatting.organizeImportsOnFormat": true
 }

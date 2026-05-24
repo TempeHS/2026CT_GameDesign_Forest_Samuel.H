@@ -3,28 +3,22 @@ using UnityEngine;
 public class SpikeDamage : MonoBehaviour
 {
     public int damageAmount = 10;
-    public int maxHealth = 100;
-    public int currentHealth;
     public HealthBarScript healthBar;
 
-
-    void Start()
+    void Awake()
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        if (healthBar == null)
+        {
+            healthBar = FindObjectOfType<HealthBarScript>();
+        }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            TakeDamage(10);
+            healthBar.(10);
         }
-    }
-
-    void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
     }
 }

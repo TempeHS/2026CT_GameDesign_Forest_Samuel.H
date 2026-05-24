@@ -3,7 +3,10 @@ using UnityEngine.UI;
 
 public class HealthBarScript : MonoBehaviour
 {
-    public Slider slider;
+    /// <summary>
+    ///  Slider value represents our current health
+    /// </summary>
+    Slider slider;
 
     public void SetMaxHealth(int health)
     {
@@ -11,8 +14,23 @@ public class HealthBarScript : MonoBehaviour
         slider.value = health;
     }
 
-    public void SetHealth(int health)
+
+    void Start()
     {
-        slider.value = health;
+        SetMaxHealth(100);
     }
+
+
+    void TakeDamage(int damage)
+    {
+        var newHealth = slider.value - damage;
+        slider.value = newHealth;
+
+        // Am I Dead?
+    }
+
+    // public void SetHealth(int health)
+    // {
+    //     slider.value = health;
+    // }
 }
