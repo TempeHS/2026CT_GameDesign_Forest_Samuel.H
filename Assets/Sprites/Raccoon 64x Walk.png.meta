@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: c2965812e97b4f744bda7f77b304d90d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1210531937402623860
+    second: Raccoon 64x Walk_0
+  - first:
+      213: 1332848011348776051
+    second: Raccoon 64x Walk_1
+  - first:
+      213: -2494122861617547127
+    second: Raccoon 64x Walk_2
+  - first:
+      213: 4212320917466078536
+    second: Raccoon 64x Walk_3
+  - first:
+      213: 854909537602457676
+    second: Raccoon 64x Walk_4
+  - first:
+      213: -4277704371222439540
+    second: Raccoon 64x Walk_5
+  - first:
+      213: -5702450565172306090
+    second: Raccoon 64x Walk_6
+  - first:
+      213: 1386353485045837669
+    second: Raccoon 64x Walk_7
+  - first:
+      213: -4405307511532790866
+    second: Raccoon 64x Walk_8
+  - first:
+      213: -6093418204802355881
+    second: Raccoon 64x Walk_9
+  - first:
+      213: -4570585844920057983
+    second: Raccoon 64x Walk_10
+  - first:
+      213: 673209360805624415
+    second: Raccoon 64x Walk_11
+  - first:
+      213: -1717088222431901575
+    second: Raccoon 64x Walk_12
+  - first:
+      213: 2032996306650203413
+    second: Raccoon 64x Walk_13
+  - first:
+      213: 6730970127151771471
+    second: Raccoon 64x Walk_14
+  - first:
+      213: -8403089644792907089
+    second: Raccoon 64x Walk_15
+  - first:
+      213: 8471216781148661576
+    second: Raccoon 64x Walk_16
+  - first:
+      213: -9007747186304972329
+    second: Raccoon 64x Walk_17
+  - first:
+      213: 7786680129286465666
+    second: Raccoon 64x Walk_18
+  - first:
+      213: 5536851423735714453
+    second: Raccoon 64x Walk_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 256
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4771626226cacc010800000000000000
+      internalID: 1210531937402623860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 256
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3749700643a3f7210800000000000000
+      internalID: 1332848011348776051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 256
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988fa17c878136dd0800000000000000
+      internalID: -2494122861617547127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 256
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d538d7e8b257a30800000000000000
+      internalID: 4212320917466078536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 61
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4053e7e1bf3ddb00800000000000000
+      internalID: 854909537602457676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 192
+        width: 61
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c899623e98a82a4c0800000000000000
+      internalID: -4277704371222439540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 192
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65fdda18c63dcd0b0800000000000000
+      internalID: -5702450565172306090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_7
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 192
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f284146215d3310800000000000000
+      internalID: 1386353485045837669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 128
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab5ab898243dd2c0800000000000000
+      internalID: -4405307511532790866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 128
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d6bd25d64df6ba0800000000000000
+      internalID: -6093418204802355881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 128
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f7c1ad3640290c0800000000000000
+      internalID: -4570585844920057983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 128
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a794ac858b75900800000000000000
+      internalID: 673209360805624415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 64
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97880f5fb5dab28e0800000000000000
+      internalID: -1717088222431901575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 64
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515019f9e57a63c10800000000000000
+      internalID: 2032996306650203413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 64
+        width: 61
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fa5ae1ba5396d50800000000000000
+      internalID: 6730970127151771471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_15
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 64
+        width: 61
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faafa525d7a326b80800000000000000
+      internalID: -8403089644792907089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847a1bfa7cecf8570800000000000000
+      internalID: 8471216781148661576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d984cdb8ad0ef280800000000000000
+      internalID: -9007747186304972329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_18
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28866bd6258df0c60800000000000000
+      internalID: 7786680129286465666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raccoon 64x Walk_19
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59212edc809d6dc40800000000000000
+      internalID: 5536851423735714453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4d217d806201a5340a6c7f36eb40bb99
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Raccoon 64x Walk_0: 1210531937402623860
+      Raccoon 64x Walk_1: 1332848011348776051
+      Raccoon 64x Walk_10: -4570585844920057983
+      Raccoon 64x Walk_11: 673209360805624415
+      Raccoon 64x Walk_12: -1717088222431901575
+      Raccoon 64x Walk_13: 2032996306650203413
+      Raccoon 64x Walk_14: 6730970127151771471
+      Raccoon 64x Walk_15: -8403089644792907089
+      Raccoon 64x Walk_16: 8471216781148661576
+      Raccoon 64x Walk_17: -9007747186304972329
+      Raccoon 64x Walk_18: 7786680129286465666
+      Raccoon 64x Walk_19: 5536851423735714453
+      Raccoon 64x Walk_2: -2494122861617547127
+      Raccoon 64x Walk_3: 4212320917466078536
+      Raccoon 64x Walk_4: 854909537602457676
+      Raccoon 64x Walk_5: -4277704371222439540
+      Raccoon 64x Walk_6: -5702450565172306090
+      Raccoon 64x Walk_7: 1386353485045837669
+      Raccoon 64x Walk_8: -4405307511532790866
+      Raccoon 64x Walk_9: -6093418204802355881
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
