@@ -17,13 +17,19 @@ public class Enemy : MonoBehaviour
         moveSpeed = 10f;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+ private void OnTriggerEnter2D(Collider2D collision)
+{
+    if (collision.GetComponent<Wall>())
     {
-        if (collision.GetComponent<Wall>())
-        {
-            dirX *= -1f;
-        }
+        dirX *= -1f;
     }
+
+    PlayerHealth player = collision.GetComponent<PlayerHealth>();
+    if (player != null)
+    {
+        player.TakeDamage(50); // damage amount
+    }
+}
 
     void FixedUpdate()
     {
