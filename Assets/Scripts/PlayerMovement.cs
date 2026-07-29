@@ -8,6 +8,7 @@ public class Cinemachine : MonoBehaviour
     public float moveSpeed = 8f;
     public float acceleration = 12f;
     public float deceleration = 10f;
+    private bool isFacingRight = true;
 
     [Header("Jumping")]
     public float jumpForce = 20f;
@@ -33,21 +34,31 @@ public class Cinemachine : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
     void Update()
-    {
-        if (isDashing)
-        {
-            return;
-        }
+{
+    if (isDashing)
+        return;
+
     moveInput = Input.GetAxisRaw("Horizontal");
+
+    if (moveInput > 0 && !isFacingRight)
+        Flip();
+    else if (moveInput < 0 && isFacingRight)
+        Flip();
+
     isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
     if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
-    {
         StartCoroutine(Dash());
     }
+
+    private void Flip()
+    {
+    isFacingRight = !isFacingRight;
+    Vector3 scale = transform.localScale;
+    scale.x *= -1;
+    transform.localScale = scale;
     }
     void FixedUpdate()
     {
