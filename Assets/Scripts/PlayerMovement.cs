@@ -9,6 +9,7 @@ public class Cinemachine : MonoBehaviour
     public float acceleration = 12f;
     public float deceleration = 10f;
     private bool isFacingRight = true;
+    public Animator animator;
 
     [Header("Jumping")]
     public float jumpForce = 20f;
@@ -44,6 +45,8 @@ public class Cinemachine : MonoBehaviour
         Flip();
     else if (moveInput < 0 && isFacingRight)
         Flip();
+
+    animator.SetFloat("Speed", Mathf.Abs(currentVelocityX));
 
     isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
