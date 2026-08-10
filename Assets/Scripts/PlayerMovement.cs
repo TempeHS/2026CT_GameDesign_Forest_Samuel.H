@@ -29,10 +29,6 @@ public class PlayerMovement : MonoBehaviour
     private float moveInput;
     private float currentVelocityX;
     private bool isGrounded;
-    private int IsJumping = 0;
-
-    bool jump = false;
-    bool dash = false;
 
     void Start()
     {
@@ -40,15 +36,6 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
 {
-
-if (!isGrounded)
-{
-    IsJumping = 1;
-}
-else
-{
-    IsJumping = 0;
-}
     if (isDashing)
         return;
 
@@ -63,17 +50,10 @@ else
 
     isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-    {
-        jump = true;
-        animator.SetBool("IsJumping", true);
-    }
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
     if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         StartCoroutine(Dash());
-        {
-            dash = true;
-        }
     }
 
     private void Flip()
@@ -82,16 +62,7 @@ else
     Vector3 scale = transform.localScale;
     scale.x *= -1;
     transform.localScale = scale;
-
-    if (IsJumping == 0) {
-        animator.SetBool("IsJumping", false);
-    } else {
-        animator.SetBool("IsJumping", true);
     }
-    Debug.Log(IsJumping);
-    }
-
-
     void FixedUpdate()
     {
          if (isDashing)
