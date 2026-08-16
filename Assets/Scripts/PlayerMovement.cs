@@ -28,11 +28,12 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private float moveInput;
     private float currentVelocityX;
-    private bool isGrounded;
+    bool isGrounded = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
     void Update()
 {
@@ -50,10 +51,19 @@ public class PlayerMovement : MonoBehaviour
 
     isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+    {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-
+        isGrounded = false;
+        animator.SetBool("isJumping", !isGrounded);
+    }
     if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         StartCoroutine(Dash());
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        isGrounded = true;
+        animator.SetBool("isJumping", !isGrounded);
     }
 
     private void Flip()
@@ -65,7 +75,10 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-         if (isDashing)
+        animator.SetFloat("xVelocity", Mathf.Abs(rb.linearVelocity.x));
+        animator.SetFloat("yVelocity", rb.linearVelocity.y);
+
+        if (isDashing)
         {
             return;
         }
