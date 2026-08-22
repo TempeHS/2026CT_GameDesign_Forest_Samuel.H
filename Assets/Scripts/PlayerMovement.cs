@@ -1,6 +1,6 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -36,37 +36,39 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
     void Update()
-{
-    if (isDashing)
-        return;
+    {
+        if (isDashing)
+            return;
 
-    moveInput = Input.GetAxisRaw("Horizontal");
+        moveInput = Input.GetAxisRaw("Horizontal");
 
-    if (moveInput > 0 && !isFacingRight)
-        Flip();
-    else if (moveInput < 0 && isFacingRight)
-        Flip();
+        if (moveInput > 0 && !isFacingRight)
+            Flip();
+        else if (moveInput < 0 && isFacingRight)
+            Flip();
 
-    animator.SetFloat("Speed", Mathf.Abs(currentVelocityX));
+        animator.SetFloat("Speed", Mathf.Abs(currentVelocityX));
 
-    isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-    if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        animator.SetBool("IsJumping", !isGrounded);
 
-    if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
-        StartCoroutine(Dash());
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+            StartCoroutine(Dash());
     }
 
     private void Flip()
     {
-    isFacingRight = !isFacingRight;
-    Vector3 scale = transform.localScale;
-    scale.x *= -1;
-    transform.localScale = scale;
+        isFacingRight = !isFacingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
     void FixedUpdate()
     {
-         if (isDashing)
+        if (isDashing)
         {
             return;
         }
@@ -76,7 +78,8 @@ public class PlayerMovement : MonoBehaviour
             currentVelocityX = Mathf.Lerp(rb.linearVelocity.x, targetSpeed, acceleration * Time.fixedDeltaTime);
         }
         else
-        {   
+        {
+
             currentVelocityX = Mathf.Lerp(rb.linearVelocity.x, 0, deceleration * Time.fixedDeltaTime);
         }
         rb.linearVelocity = new Vector2(currentVelocityX, rb.linearVelocity.y);
@@ -87,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
         isDashing = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-       rb.linearVelocity = new Vector2(moveInput * dashingpower, 0f);
+        rb.linearVelocity = new Vector2(moveInput * dashingpower, 0f);
         tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
