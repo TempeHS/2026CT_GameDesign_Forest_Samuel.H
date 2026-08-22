@@ -87,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator Dash()
     {
         canDash = false;
-        isDashing = true;
+        animator.SetBool("IsDashing", isDashing = true);
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
         rb.linearVelocity = new Vector2(moveInput * dashingpower, 0f);
@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         rb.gravityScale = originalGravity;
-        isDashing = false;
+        animator.SetBool("IsDashing", isDashing = false);
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }
