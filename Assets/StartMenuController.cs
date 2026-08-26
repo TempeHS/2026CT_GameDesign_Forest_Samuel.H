@@ -7,6 +7,13 @@ public class StartMenuController : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void OnStart2Click()
+    {
+        SceneManager.LoadScene("Game2");
+    }
+
+
+
     public void OnExitClick()
     {
         #if UNITY_EDITOR
