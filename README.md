@@ -91,8 +91,8 @@
 |---|---|---|---|
 | M-1 | Player Movement | Complex player movement, a dash, jump, run | PlayerMovement.cs |
 | M-2 | Health Bar System | Health bar system which tracks the players health based on interecations with other game objects like enemies and spikes, tracks when the player takes damage and when to kill the player object | HealthBarScript.cs and PlayerMovement.cs |
-| M-3 | Main Menu | A menu where the player can decide which level to play, or exit the game | |
-| M-4 | | | |
+| M-3 | Main Menu | A menu where the player can decide which level to play, or exit the game | StartMenuController.cs |
+| M-4 |  | | |
 | M-5 | | | |
 
 ### 3.2 Player Controls
