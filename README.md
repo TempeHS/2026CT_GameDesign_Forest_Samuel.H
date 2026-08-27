@@ -2,13 +2,13 @@
 
 | Field | Detail |
 |---|---|
-| **Game Title** | |
-| **Student Name(s)** | |
-| **Class / Course** | |
-| **Repository** | |
-| **Unity Version** | |
-| **Document Version** | |
-| **Date** | |
+| **Game Title** | Forest Explorer |
+| **Student Name(s)** | Samuel H |
+| **Class / Course** | Computer Technology |
+| **Repository** | 2026CT_GameDesign_Forest_Samuel.H |
+| **Unity Version** | 6000.0.58f1 |
+| **Document Version** | 0.1 |
+| **Date** | 27/8/26 |
 
 ---
 
@@ -69,10 +69,10 @@
 
 | Field | Detail |
 |---|---|
-| **Video Title** | |
+| **Video Title** | Forest Explorer: Feature Walk Through |
 | **Link / Embed** | |
 | **Duration** | |
-| **Description** | |
+| **Description** | Showcases my game design with many different features, like a parallax background, movement, animation, health bar, hud, death and respawn all play a part |
 
 ### 2.2 Feature Highlight Clips
 
@@ -89,9 +89,9 @@
 ### 3.1 Core Mechanics
 | ID | Mechanic | Description | Implemented In (Script/Object) |
 |---|---|---|---|
-| M-1 | | | |
-| M-2 | | | |
-| M-3 | | | |
+| M-1 | Player Movement | Complex player movement, a dash, jump, run | PlayerMovement.cs |
+| M-2 | Health Bar System | Health bar system which tracks the players health based on interecations with other game objects like enemies and spikes, tracks when the player takes damage and when to kill the player object | HealthBarScript.cs and PlayerMovement.cs |
+| M-3 | Main Menu | A menu where the player can decide which level to play, or exit the game | |
 | M-4 | | | |
 | M-5 | | | |
 
