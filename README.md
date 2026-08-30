@@ -98,10 +98,10 @@
 ### 3.2 Player Controls
 | Action | Input (Keyboard / Controller) | Description |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+| Run left | A | Moves player left |
+| Run Right | D | Moves player right |
+| Jump | SpaceBar | Moves player upwards |
+| Dash | Shift | Makes the player dash in the desired direction |
 
 ### 3.3 Physics & Collision
 | Feature | Description |
