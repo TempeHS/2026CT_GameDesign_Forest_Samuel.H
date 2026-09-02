@@ -32,18 +32,21 @@
 
 ### 1.1 Genre
 
+2D Platformer.
 
 ### 1.2 Target Audience
 
+Gamers from 8-20 years old.
 
 ### 1.3 Game Summary
 
+The player is exploring a forest and needs to survive while avoiding dangers like spikes and racoons which deal damage to the player so they can reach the escape portal allowing the player to exit the forest and continue on their journey.
 
 ### 1.4 Win / Loss Conditions
 | Condition | Description |
 |---|---|
-| Win | |
-| Loss | |
+| Win | Beat/pass each level |
+| Loss | Lose all health |
 
 ### 1.5 Platform & Build Settings
 | Setting | Detail |
@@ -346,8 +349,26 @@
 ### 10.3 Scripts & Code Snippets
 | Script / Snippet | Source | Licence | URL | Used For | Changes Made |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
+| public void OnStartClick()
+    {
+        SceneManager.LoadScene("Game");
+    } public void OnExitClick()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+            Application.Quit();
+    } 
+| | Youtube |  | https://www.youtube.com/watch?v=paaBTt5GcMU | Main menu | Added a script allowing the player to exit and start the game. |
+
+| | Youtube |  | https://www.youtube.com/watch?v=hkaysu1Z-N8 | 2D Animation | Added script to enable animations and followed steps to get the animotor section in unity working |
+
+| | Youtube |  | https://www.youtube.com/watch?v=K1xZ-rycYY8 | 2D Player movement | Added a script for player movement and followed steps to use this code in unity at the start of my game development |
+| | Youtube |  | https://www.youtube.com/watch?v=NbA95f1FlXQ | Enemy patrolling | Added a script to two player objects allowing the enemys to patroll a certain area |
+| | Youtube |  | https://www.youtube.com/watch?v=2IvpxG1dyls | Spike Damage | Added a script for spikes to deal damage to the player |
+| | Youtube |  | https://www.youtube.com/watch?v=2kFGmuPHiA0 | Dashing | Added script allowing the player to dash |
+| | Youtube |  | https://www.youtube.com/watch?v=zit45k6CUMk | Parallax Background | Added script to my backgrounds allowing them to follow the player at different speeds so it gives the illusiong of depth |
+| | Youtube |  | https://www.youtube.com/watch?v=BLfNP4Sc_iA | Health Bar | Added a script allowing the player to track damage.
 
 ### 10.4 Unity Packages & Plugins
 | Package Name | Version | Source | Licence | URL | Purpose |
