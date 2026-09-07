@@ -361,13 +361,156 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
     } 
 | | Youtube |  | https://www.youtube.com/watch?v=paaBTt5GcMU | Main menu | Added a script allowing the player to exit and start the game. |
 
-| | Youtube |  | https://www.youtube.com/watch?v=hkaysu1Z-N8 | 2D Animation | Added script to enable animations and followed steps to get the animotor section in unity working |
+  animator.SetFloat("Speed", Mathf.Abs(currentVelocityX)); | | Youtube |  | https://www.youtube.com/watch?v=hkaysu1Z-N8 | 2D Animation | Added script to enable animations and followed steps to get the animotor section in unity working |
 
-| | Youtube |  | https://www.youtube.com/watch?v=K1xZ-rycYY8 | 2D Player movement | Added a script for player movement and followed steps to use this code in unity at the start of my game development |
+private float horizontal;
+    private float speed = 8f;
+    private float jumpingPower = 16f;
+    private bool isFacingRight = true;
+
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
+
+    void Update()
+    {
+        horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetButtonDown("Jump") && IsGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
+
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+
+        Flip();
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+
+    private void Flip()
+    {
+        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
+        }
+    }| | Youtube |  | https://www.youtube.com/watch?v=K1xZ-rycYY8 | 2D Player movement | Added a script for player movement and followed steps to use this code in unity at the start of my game development |
+void Start()
+    {
+        localScale = transform.localScale;
+        rb = GetComponent<Rigidbody2D>();
+        dirX = -1f;
+        moveSpeed = 10f;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+{
+    if (collision.GetComponent<Wall>())
+    {
+        dirX *= -1f;
+    }
+}
+
+ void FixedUpdate()
+    {
+        rb.linearVelocity = new Vector2(dirX * moveSpeed, rb.linearVelocity.y);
+    }
+
+    void LateUpdate()
+    {
+        CheckWhereToFace();
+    }
+
+    void CheckWhereToFace()
+    {
+        if (dirX > 0)
+            facingRight = true;
+        else if (dirX < 0)
+            facingRight = false;
+
+        if (((facingRight) && (localScale.x < 0)) || ((!facingRight) && (localScale.x > 0)))
+            localScale.x *= -1;
+
+        transform.localScale = localScale;
+    }
+
 | | Youtube |  | https://www.youtube.com/watch?v=NbA95f1FlXQ | Enemy patrolling | Added a script to two player objects allowing the enemys to patroll a certain area |
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            healthBar.TakeDamage(DamageAmount);
+        }
+    }
 | | Youtube |  | https://www.youtube.com/watch?v=2IvpxG1dyls | Spike Damage | Added a script for spikes to deal damage to the player |
-| | Youtube |  | https://www.youtube.com/watch?v=2kFGmuPHiA0 | Dashing | Added script allowing the player to dash |
-| | Youtube |  | https://www.youtube.com/watch?v=zit45k6CUMk | Parallax Background | Added script to my backgrounds allowing them to follow the player at different speeds so it gives the illusiong of depth |
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        animator.SetBool("IsDashing", isDashing = true);
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.linearVelocity = new Vector2(moveInput * dashingpower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        animator.SetBool("IsDashing", isDashing = false);
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+    }| | Youtube |  | https://www.youtube.com/watch?v=2kFGmuPHiA0 | Dashing | Added script allowing the player to dash |
+
+    [SerializeField] private Slider slider;
+
+    private void Awake()
+    {
+        if (slider == null)
+        {
+            slider = GetComponent<Slider>();
+        }
+
+        if (slider == null)
+        {
+            Debug.LogError("HealthBarScript: No Slider assigned or found on this GameObject.");
+        }
+    }
+
+
+    public void SetMaxHealth(int health)
+    {
+        slider.maxValue = health;
+        slider.value = health;
+    }
+
+
+    void Start()
+    {
+        SetMaxHealth(100);
+    }
+
+
+    public void TakeDamage(int damage)
+    {
+        var newHealth = slider.value - damage;
+        slider.value = newHealth;
+
+        if (slider.value == 0)
+        {
+            Debug.Log("Player is dead!");
+        }
+    }
 | | Youtube |  | https://www.youtube.com/watch?v=BLfNP4Sc_iA | Health Bar | Added a script allowing the player to track damage.
 
 ### 10.4 Unity Packages & Plugins
