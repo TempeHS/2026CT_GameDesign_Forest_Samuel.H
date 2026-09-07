@@ -95,38 +95,37 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 | M-1 | Player Movement | Complex player movement, a dash, jump, run | PlayerMovement.cs |
 | M-2 | Health Bar System | Health bar system which tracks the players health based on interecations with other game objects like enemies and spikes, tracks when the player takes damage and when to kill the player object | HealthBarScript.cs and PlayerMovement.cs |
 | M-3 | Main Menu | A menu where the player can decide which level to play, or exit the game | StartMenuController.cs |
-| M-4 |  | | |
-| M-5 | | | |
+| M-4 | Enemies | A racoon for an enemy, which the player has to be careful of to avoid taking 30/100 damage. | Racoon.cs |
+| M-5 | Animation | Animations which depicts the action being taken by the player, a run, a dash, a jump etc. | PlayerMovement.cs |
 
 ### 3.2 Player Controls
 | Action | Input (Keyboard / Controller) | Description |
 |---|---|---|
-| Run left | A | Moves player left |
-| Run Right | D | Moves player right |
-| Jump | SpaceBar | Moves player upwards |
-| Dash | Shift | Makes the player dash in the desired direction |
+| Run left | A/Joystick Left | Moves player left |
+| Run Right | D/Joystick Right | Moves player right |
+| Jump | SpaceBar/A/X | Moves player upwards |
+| Dash | Shift/L3/LeftThumbStick | Makes the player dash in the desired direction |
 
 ### 3.3 Physics & Collision
 | Feature | Description |
 |---|---|
-| | |
-| | |
-| | |
+| Ground Check | This feature checks whether the player is on the ground or not. This is essential because if the player is not on the ground certain actions cannot be taken, like the jump. Not allowing the player to take the action of jumping while in the air prevents from an infinite jump. |
+| Wall | Having the an empty wall script allows me to attacht this script to an object and control some aspects of the wall. Meaning that when the enemy racoon comes into contact with one of the two walls it wil change direction and flip the animation to start going in the opposite direction. This prevents the racoon from falling off the platform.|
 
 ### 3.4 Game Loop
 | Stage | Description |
 |---|---|
-| Start / Initialisation | |
-| Core Loop | |
-| Win / End State | |
-| Restart | |
+| Start / Initialisation | When in the main menu the player can choose to start 1 of 2 levels, this initiates the game and allows the player to begin playing|
+| Core Loop | After the initilistation the player will either die, and respawn to the start of the level giving them another attempt at the levek, or they will beat the level and reach the end, this will then transport the player to the main menu allowing the loop to restart giving them the option to start a new level or quit. |
+| Win / End State | The end state occurs at the main menu where the player can close the game by clicking exit |
+| Restart | The restart occurs when the player dies and respawns to the beginning of the player |
 
 ### 3.5 Scoring & Progression
 | Element | Description |
 |---|---|
 | Scoring System | |
 | Difficulty Progression | |
-| Unlockables / Levels | |
+| Unlockables / Levels | There are currently two playable levels which can be accessed from the ,main menu|
 
 ---
 
@@ -136,10 +135,10 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | Effect Name | Purpose | Screenshot |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+| N/A | N/A | N/A |
+| Dash Trail | Renders a trail behind the player after dashing. | N/A |
+| N/A | N/A | N/A |
+| N/A | N/A | N/A |
 
 > Add screenshot images using: `![Effect Name](./docs/screenshots/effect_name.png)`
 
@@ -149,9 +148,9 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | Cut Scene | Trigger | Description | Screenshot / Still |
 |---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
+| N/A | N/A | N/A | N/A |
+| N/A | N/A | N/A | N/A |
+| N/A | N/A | N/A | N/A |
 
 > Add screenshot images using: `![Cut Scene Name](./docs/screenshots/cutscene_name.png)`
 
@@ -161,9 +160,11 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | Animation | Object / Character | Description | Screenshot |
 |---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
+| Run | Player  | The run animation plays when the parameter of speed > 0.01 | |
+| Jump | Player | The jump animation plays when the Y speed > 0.01 or <-0.1| |
+| Dash | Player | | |
+| Idle | Player | The Idle animation plays when the speed parameter < 0.01| |
+| Racoon Walk | Enemy | The racoon walk animation constantly plays| | 
 
 > Add screenshot images using: `![Animation Name](./docs/screenshots/animation_name.png)`
 
