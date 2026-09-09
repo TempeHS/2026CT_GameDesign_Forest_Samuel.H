@@ -51,9 +51,9 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 1.5 Platform & Build Settings
 | Setting | Detail |
 |---|---|
-| Target Platform | |
-| Resolution | |
-| Build Type | |
+| Target Platform | PC and Console |
+| Resolution | 720x1280 |
+| Build Type | Release |
 
 ---
 
@@ -123,8 +123,8 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 3.5 Scoring & Progression
 | Element | Description |
 |---|---|
-| Scoring System | |
-| Difficulty Progression | |
+| Scoring System | N/A |
+| Difficulty Progression | After passing level 1 the 2nd level progresses in difficulty and is much harder than the first level. |
 | Unlockables / Levels | There are currently two playable levels which can be accessed from the ,main menu|
 
 ---
@@ -135,8 +135,7 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | Effect Name | Purpose | Screenshot |
 |---|---|---|
-| N/A | N/A | N/A |
-| Dash Trail | Renders a trail behind the player after dashing. | N/A |
+| Dash Trail | Renders a trail behind the player after dashing. |![Dash_Effect](trail.png) |
 | N/A | N/A | N/A |
 | N/A | N/A | N/A |
 
@@ -160,11 +159,11 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | Animation | Object / Character | Description | Screenshot |
 |---|---|---|---|
-| Run | Player  | The run animation plays when the parameter of speed > 0.01 | |
-| Jump | Player | The jump animation plays when the Y speed > 0.01 or <-0.1| |
-| Dash | Player | | |
-| Idle | Player | The Idle animation plays when the speed parameter < 0.01| |
-| Racoon Walk | Enemy | The racoon walk animation constantly plays| | 
+| Run | Player  | The run animation plays when the parameter of speed > 0.01 | ![Player_Run.anim](Screenshot%202026-09-09%20091024.png) |
+| Jump | Player | The jump animation plays when the Y speed > 0.01 or <-0.1 | ![Player_Jump.anim](Screenshot%202026-09-09%20092207.png) |
+| Dash | Player | The Dash animation will play when the isDashing Bool is equal to true | ![Player_Dash.anim](Screenshot%202026-09-09%20092150.png) |
+| Idle | Player | The Idle animation plays when the speed parameter < 0.01 | ![Player_Idle.anim](Screenshot%202026-09-09%20092157.png) |
+| Racoon Walk | Enemy | The racoon walk animation constantly plays | ![Racoon.anim](Screenshot%202026-09-09%20092636.png) | 
 
 > Add screenshot images using: `![Animation Name](./docs/screenshots/animation_name.png)`
 
@@ -174,9 +173,9 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | Feature | Description | Screenshot |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| N/A | N/A | N/A |
+| N/A | N/A | N/A |
+| N/A | N/A | N/A |
 
 > Add screenshot images using: `![Feature Name](./docs/screenshots/lighting_name.png)`
 
@@ -186,10 +185,12 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | Shader / Material | Applied To | Description | Screenshot |
 |---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
-
+| Front ParralaxBackground | Parralax Background | Front Section of the Parralax Background | ![Front.png](Front%20BG.png) |
+| Mid Parralax Background | Parralax Background | Mid Section of the Parralax Background| ![Mid.png](Mid%20BG.png) |
+| Back Parralax Background | Parralax Background | Back Section of the Parralax Background | ![Back.png](Back%20BG.png) |
+| Tile Pallate | Ground | Tile pallete square used to texture the ground | ![Tile.png](Screenshot%202026-09-09%20094806.png) |
+| Player Texture | The player | Player animation texture applied to the player | ![Player.png](Screenshot%202026-09-09%20092157.png)  |
+| Racoon Texture | The enemy | Racoon texture applied to the enemy object | ![Racoon.png](Screenshot%202026-09-09%20092636.png)  |
 > Add screenshot images using: `![Shader Name](./docs/screenshots/shader_name.png)`
 
 ---
@@ -203,9 +204,9 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | Description | Screenshot |
 |---|---|
-| | |
-| | |
-| | |
+| N/A | N/A |
+| N/A | N/A |
+| N/A | N/A |
 
 ---
 
@@ -248,10 +249,9 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 6.2 Menus
 | Menu | Purpose | Screenshot |
 |---|---|---|
-| Main Menu | | |
-| Pause Menu | | |
-| Game Over Screen | | |
-| | | |
+| Main Menu | To traverse the game allowing the player to either exit the game or select a level to play | ![menu.png](Main%20menu.png) |
+| Pause Menu | Takes the player from the current level back to the main menu | ![Pause.png](Pause%20menu.png) |
+| Game Over Screen | Shows that the player died | |
 
 > Add screenshot images using: `![Menu Name](./docs/screenshots/menu_name.png)`
 
