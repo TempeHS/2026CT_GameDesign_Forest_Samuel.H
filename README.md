@@ -262,17 +262,16 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 7.1 Scene List
 | Scene Name | Purpose | Description |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+| StartScene | Serves as the first scene in the whole game so the player can choose to start a level | The start scene is the scene which loads up first and allows the player to choose to start a level in the game or to exit the game |
+| Game | Serves as the first level in Forest Adventure | Game is the first level in the game which the player can play through |
+| Game2 | Serves as the second level in Forest Adventure | Game 2 is the second level in the game which the player can play through |
 
 ### 7.2 Level / Environment Screenshots
 | Level / Area | Description | Screenshot |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Level 1 | The first level in the game where the player tries to reach the end of the level and advance to level 2 | ![Level1.png](Level%201.png) |
+| Level 2 | The second level in the game where the player triest to reach the end | ![Level2.png](levle%202.png) |
+
 
 > Add screenshot images using: `![Level Name](./docs/screenshots/level_name.png)`
 
