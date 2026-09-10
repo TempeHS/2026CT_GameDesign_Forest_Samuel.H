@@ -335,9 +335,12 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 10.1 Visual Assets
 | Asset Name | Type | Creator / Source | Licence | URL | Used For |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Health Bar | Image | Brackeys Youtube | https://www.youtube.com/watch?v=BLfNP4Sc_iA | | Health Bar UI |
+| Heart | Image | Brackeys Youtube | https://www.youtube.com/watch?v=BLfNP4Sc_iA | | Health Bar UI |
+| Hero Knight 2 | Animation | Luiz Melo Unity Assets Store | | https://assetstore.unity.com/packages/2d/characters/hero-knight-2-168019 | Player Animations |
+| Racoon | Animation | Ned R | N/A | N/A | Enemy Animations |
+| Tile Pallete | Image | Ned R | N/A | N/A | Ground objects |
+| Background | Image | Ned R | N/A | N/A | Parralax Background |
 
 ### 10.2 Audio Assets
 | Asset Name | Type | Creator / Source | Licence | URL | Used For |
@@ -516,15 +519,12 @@ void Start()
 ### 10.4 Unity Packages & Plugins
 | Package Name | Version | Source | Licence | URL | Purpose |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Hero Knight 2 | 1.0 | Unity | CC0 | https://assetstore.unity.com/packages/2d/characters/hero-knight-2-168019 | Player Animations |
 
 ### 10.5 Fonts
 | Font Name | Creator / Source | Licence | URL |
 |---|---|---|---|
-| | | | |
-| | | | |
+| N/A | N/A | N/A | N/A |
 
 ---
 
@@ -532,7 +532,7 @@ void Start()
 
 | # | Challenge Encountered | How It Was Solved |
 |---|---|---|
-| 1 | | |
+| 1 | Animating the player object | The challenge of animating the player object was a hard challenge to surpass. This is because no animation tutorial videos seemed to work, either they were too out of date or they just failed to work no matter how much I tried. After a couple lessons I solved this problem by combining multiple animation videos together, taking bits from one tutorial that worked, and putting them in where the other tutorial failed. |
 | 2 | | |
 | 3 | | |
 | 4 | | |
