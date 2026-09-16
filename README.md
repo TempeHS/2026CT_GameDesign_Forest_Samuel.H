@@ -215,16 +215,15 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 5.1 Music
 | Track | Scene / Trigger | Source / Composer |
 |---|---|---|
-| | | |
-| | | |
+| Tales of Adventure - Daniel Burgin | On load the background music will play | Youtube Blue Turtle |
 
 ### 5.2 Sound Effects
 | Sound Effect | Trigger | Source |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
+| N/A | N/A | N/A |
+| N/A | N/A | N/A |
+| N/A | N/A | N/A |
+| N/A | N/A | N/A |
 
 ### 5.3 Audio Implementation
 | Feature | Description |
@@ -240,8 +239,8 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 6.1 HUD Elements
 | Element | Purpose | Screenshot |
 |---|---|---|
-| | | |
-| | | |
+| Shift to Dash! | Tells the Player How to Dash | |
+| Heatlh Bar | | |
 | | | |
 
 > Add screenshot images using: `![HUD Element](./docs/screenshots/hud_name.png)`
