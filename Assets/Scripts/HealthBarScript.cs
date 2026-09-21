@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class HealthBarScript : MonoBehaviour
 {
     [SerializeField] private Slider slider;
+    public GameManager gameManager;
 
     private void Awake()
     {
@@ -40,6 +41,7 @@ public class HealthBarScript : MonoBehaviour
         if (slider.value == 0)
         {
             Debug.Log("Player is dead!");
+            gameManager.Die();
         }
     }
 }
