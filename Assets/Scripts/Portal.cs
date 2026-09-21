@@ -1,14 +1,14 @@
-
 using UnityEngine;
-public class Death_Barrier : MonoBehaviour
+
+public class Portal : MonoBehaviour
 {
-    public GameManager gameManager; 
+    public GameManager gameManager;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            gameManager.Die();
+            gameManager.Win();
         }
     }
 }

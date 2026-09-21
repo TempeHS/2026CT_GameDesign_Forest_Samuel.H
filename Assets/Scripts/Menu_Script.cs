@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class StartMenu : MonoBehaviour
+public class Menu : MonoBehaviour
 {
   public void OnMenuClick()
     {
