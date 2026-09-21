@@ -7,8 +7,8 @@
 | **Class / Course** | Computer Technology |
 | **Repository** | 2026CT_GameDesign_Forest_Samuel.H |
 | **Unity Version** | 6000.0.58f1 |
-| **Document Version** | 0.1 |
-| **Date** | 27/8/26 |
+| **Document Version** | 1.0 |
+| **Date** | 21/9/2026 |
 
 ---
 
@@ -46,7 +46,7 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 | Condition | Description |
 |---|---|
 | Win | Beat/pass each level |
-| Loss | Lose all health |
+| Loss | Lose all health and die |
 
 ### 1.5 Platform & Build Settings
 | Setting | Detail |
@@ -173,9 +173,8 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | Feature | Description | Screenshot |
 |---|---|---|
-| N/A | N/A | N/A |
-| N/A | N/A | N/A |
-| N/A | N/A | N/A |
+| Lighting | Lighting added to the player object and following the player around, allowing for the player to see the level | ![Lighting.png](Lighting.png) |
+| Shadows | Using a shadow caster 2D shadows have been added to objects in the level and respond to different lighting | ![Shadows.png](Shadows.png) |
 
 > Add screenshot images using: `![Feature Name](./docs/screenshots/lighting_name.png)`
 
@@ -228,9 +227,9 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 5.3 Audio Implementation
 | Feature | Description |
 |---|---|
-| Audio Mixer / Groups | |
-| Spatial / 3D Audio | |
-| Dynamic Audio | |
+| Audio Mixer / Groups | N/A |
+| Spatial / 3D Audio | N/A |
+| Dynamic Audio | N/A |
 
 ---
 
@@ -239,9 +238,8 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 6.1 HUD Elements
 | Element | Purpose | Screenshot |
 |---|---|---|
-| Shift to Dash! | Tells the Player How to Dash | |
-| Heatlh Bar | | |
-| | | |
+| Shift to Dash! | Tells the Player How to Dash | ![Shift_to_Dash.png](shift%20to%20dash.png) |
+| Heatlh Bar | Shows the players current health and how close to death they are | ![Health_bar.png](Health%20bar.png) |
 
 > Add screenshot images using: `![HUD Element](./docs/screenshots/hud_name.png)`
 
@@ -334,9 +332,9 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 10.1 Visual Assets
 | Asset Name | Type | Creator / Source | Licence | URL | Used For |
 |---|---|---|---|---|---|
-| Health Bar | Image | Brackeys Youtube | https://www.youtube.com/watch?v=BLfNP4Sc_iA | | Health Bar UI |
-| Heart | Image | Brackeys Youtube | https://www.youtube.com/watch?v=BLfNP4Sc_iA | | Health Bar UI |
-| Hero Knight 2 | Animation | Luiz Melo Unity Assets Store | | https://assetstore.unity.com/packages/2d/characters/hero-knight-2-168019 | Player Animations |
+| Health Bar | Image | Brackeys Youtube | CC0 | https://www.youtube.com/watch?v=BLfNP4Sc_iA | Health Bar UI |
+| Heart | Image | Brackeys Youtube | CC0 | https://www.youtube.com/watch?v=BLfNP4Sc_iA | Health Bar UI |
+| Hero Knight 2 | Animation | Luiz Melo Unity Assets Store | CC0 | https://assetstore.unity.com/packages/2d/characters/hero-knight-2-168019 | Player Animations |
 | Racoon | Animation | Ned R | N/A | N/A | Enemy Animations |
 | Tile Pallete | Image | Ned R | N/A | N/A | Ground objects |
 | Background | Image | Ned R | N/A | N/A | Parralax Background |
@@ -344,9 +342,9 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 10.2 Audio Assets
 | Asset Name | Type | Creator / Source | Licence | URL | Used For |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Tales of Adventure - Daniel Burgin | Music | Youtube Blue Turtle | Unknown | https://www.youtube.com/watch?v=GkSHE6wOzX0&t=4885s | Background music |
+| N/A | N/A | N/A | N/A | N/A | N/A |
+| N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### 10.3 Scripts & Code Snippets
 | Script / Snippet | Source | Licence | URL | Used For | Changes Made |
@@ -532,10 +530,8 @@ void Start()
 | # | Challenge Encountered | How It Was Solved |
 |---|---|---|
 | 1 | Animating the player object | The challenge of animating the player object was a hard challenge to surpass. This is because no animation tutorial videos seemed to work, either they were too out of date or they just failed to work no matter how much I tried. After a couple lessons I solved this problem by combining multiple animation videos together, taking bits from one tutorial that worked, and putting them in where the other tutorial failed. |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 2 | Communicating with multimedia partner | Communicating with my multimedia partner was another challenge that I encounted. On the first day we exchanged numbers, this I thought would fix the problem of communication, however it did not. I did my part by communicating through the app of our choice 'whatsapp' updating him on what I had completing and asking him for assets which he created, however on most occasions he would ghost me, no updates, no "Yep i'm still working on this" Eventually I solved this problem by finding him at lunch and talking to him inperson. Ultimatley after poor communication I recieved less than suitible assets, wtih only 1/3 suiting my needs. |
+| 3 | Starting | Another more simple challenge I encounted was on the first lesson when starting our game, I was utterly and completely lost. After working for over a term on a 3D rollerball game I became familiar with the unity tool, however starting a 2D game was something completely new to me and I was completely out of my league as a developer. However after following numerous tutorials on how to start making a game I ended up with a very simple movement script, and my scene, more and more started to resemble a game. |
 
 ---
 
