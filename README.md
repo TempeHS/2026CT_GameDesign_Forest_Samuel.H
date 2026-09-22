@@ -298,14 +298,14 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 | Racoon.cs | Enemy | Allows the racoon to deal damage and move on the x axis |
 | StartMenu.cs | Menu button | Allows the player to return to the main menu from the game |
 | StartMenuController | Canvas in StartScene | Controlls the Main menu |
-| Wall | | |
+| Wall | Platforms | In my racoon.cs it checks when something enters the trigger if it has the wall script attached, if so flip the racoon. So an empty script is attached to the partrol barriers to flip the racoon so it can keep patrolling the platform indefinitley.  |
 
 ### 8.2 Key Algorithms / Logic
 | Feature | Script | Description |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Dashing | PlayerMovement.cs | THe dash has to last 0.2 s, so Dash() is a coroutine started by StartCoroutine. The sequence is set canDash = false to make sure that you cannot spam dashign then it sets isDashing = true.
+| GroundCheck | PlayerMovement.cs | The groundcheck is an object placed at the players feet and it asks if any other collider is touching the surface to check if the player 'isGrounded' the code  if (Input.GetKeyDown(KeyCode.Space) && isGrounded) makes sure that the player isGrounded before allowing it to jump this makes sure the player has to be on ground to jump and not in the air. |
+| Parallax | Parallax.cs | The code parallaxMultiplier = 0.3, 0.2, 0.1 means that the backgrounds respectively travel 30% faster, 20%, and 10% faster than the camera following the player, which makes the background slide past the player slowly creating the parallax illusion and adding depth. |
 
 ### 8.3 Design Patterns Used
 | Pattern | Where Applied | Justification |
