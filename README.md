@@ -73,17 +73,16 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 | Field | Detail |
 |---|---|
 | **Video Title** | Forest Explorer: Feature Walk Through |
-| **Link / Embed** | 2:13  |
-| **Duration** | |
+| **Link / Embed** |  |
+| **Duration** | 2:13 |
 | **Description** | Showcases my game design with many different features, like a parallax background, movement, animation, health bar, hud, death and respawn all play a part |
 
 ### 2.2 Feature Highlight Clips
 
 | Clip | Description | Link |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| N/A | N/A | N/A |
+| N/A | N/A | N/A |
 
 ---
 
@@ -310,9 +309,9 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 ### 8.3 Design Patterns Used
 | Pattern | Where Applied | Justification |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Scripts | Assets/Scripts | Some scripts have multiple uses, for example using the PlayerHealth.cs script I can apply it to other game objects that I also want to deal damage to the player. |
+| Manager | GameManager.cs | Winning, dying and respawning are all in the same script so other sripts can just call gameManager.Die() instead of repeating the same code |
+| Label | Wall.cs | The empty script works like a label. The Racoon checks to see if the label is on the game object and if it is the racoon will turn around |
 
 ---
 
@@ -322,14 +321,13 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 
 | # | Title | Author / Creator | URL / Source | What You Used It For | What You Changed / Adapted |
 |---|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
+| 1 | Start Menu - 2D Platformer Unity #28 | Game Code Library | https://www.youtube.com/watch?v=paaBTt5GcMU | Main Menu | N/A |
+| 2 | 2D Animation in Unity (tutorial) | Brackeys | https://www.youtube.com/watch?v=hkaysu1Z-N8 | Animation | N/A |
+| 3 | 2D Player Movement in Unity | Bendux | https://www.youtube.com/watch?v=K1xZ-rycYY8 | 2D Player Movement | Gravity Scale and Speed of the Player |
+| 4 | Enemy walks from one wall to the other Changing Move Direction as he Collides With them in Unity Game | Alexander Zotov | https://www.youtube.com/watch?v=NbA95f1FlXQ | Enemy Patrolling | Freezing the Y level |
+| 5 | Unity 2D Environmental SPikes - Easy Damage to the player | Bobbville | https://www.youtube.com/watch?v=2IvpxG1dyls | Spikes | N/A |
+| 6 | How to make a HEALTH BAR in Unity! | Brackeys | https://www.youtube.com/watch?v=BLfNP4Sc_iA | HealthBar | N/A |
+| 7 | How to Dash in Unity | Bendux | https://www.youtube.com/watch?v=2kFGmuPHiA0 | Dashing | N/A |
 
 ---
 
@@ -549,26 +547,28 @@ void Start()
 
 ---
 
-### Branch 1 — `main`
+### Branch 1 — `<Main>`
 
 | Field | Detail |
 |---|---|
 | **Branch Name** | `main` |
 | **Purpose** | Stable, releasable version of the game |
-| **Merged From** | |
-| **Final Commit** | |
+| **Merged From** | main |
+| **Final Commit** | Update StartScene.unity |
+
+![BranchImage](main.png)
 
 ---
 
-### Branch 2 — `feature/`
+### Branch 2 — `Animation`
 
 | Field | Detail |
 |---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
+| **Branch Name** | Animation |
+| **Feature Developed** | Animation |
+| **Merged Into** | Main |
+| **Date Started** | May 24 |
+| **Date Merged** | Jul 30 |
 
 #### What Was Built
 <!-- Describe what this branch added or changed -->
@@ -576,31 +576,31 @@ void Start()
 #### Key Commits
 | Commit Message | What Changed |
 |---|---|
-| | |
-| | |
-| | |
+| Wip aNIMATION | I got my run animation and idle animation to play |
+| Wip Jump anim | Started to work on the jump animation and transition to and from it. |
 
 #### Problems Encountered & Resolved
 | Problem | Resolution |
 |---|---|
-| | |
-| | |
+| Creating a good event in unity Animation which would transition the jump animtion | I solved this issue by instead of creating just one event (thats what I did for the idle and jump speed<0, speed>0 )to fufil I created two so I wouldnt need to create a really complex function and just split it in two. |
 
 #### Screenshot / Evidence
 <!-- Add a screenshot of the feature working -->
 > `![Feature Name](./docs/screenshots/branch_feature_name.png)`
 
+![BranchImage1](Aniamtion.png)
+
 ---
 
-### Branch 3 — `feature/`
+### Branch 3 — `Experiment`
 
 | Field | Detail |
 |---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
+| **Branch Name** | Experiment |
+| **Feature Developed** | Further Animation |
+| **Merged Into** | Main |
+| **Date Started** | Aug 12 |
+| **Date Merged** | Aug 22 |
 
 #### What Was Built
 
@@ -608,30 +608,30 @@ void Start()
 #### Key Commits
 | Commit Message | What Changed |
 |---|---|
-| | |
-| | |
-| | |
+| Jump Anim Working and Dash Anim Working | I got the Jump and Dash animations to fully work |
+| Fixed Bug | I fixed a bug where I deleted some unity code which broke my game by reinstalling the editor |
+| N/A | N/A |
 
 #### Problems Encountered & Resolved
 | Problem | Resolution |
 |---|---|
-| | |
-| | |
+| Game broken | Uninstalling and reinstalling the editor so that all the files were redownloaded and then commited so the unity code/assets came back |
 
 #### Screenshot / Evidence
 > `![Feature Name](./docs/screenshots/branch_feature_name.png)`
+![BranchImage2](Experiment.png)
 
 ---
 
-### Branch 4 — `feature/`
+### Branch 4 — `Animation1`
 
 | Field | Detail |
 |---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
+| **Branch Name** | Animation1 |
+| **Feature Developed** | Further Animation |
+| **Merged Into** | Main |
+| **Date Started** | Jul 30 |
+| **Date Merged** | Aug 6 |
 
 #### What Was Built
 
@@ -639,80 +639,17 @@ void Start()
 #### Key Commits
 | Commit Message | What Changed |
 |---|---|
-| | |
-| | |
-| | |
+| Wip Animation | Still working on implementing the jump animation |
 
 #### Problems Encountered & Resolved
 | Problem | Resolution |
 |---|---|
-| | |
-| | |
+| Couldn't get the Jump animation to work | reverted changes and worked on it in a new branch (experiment) |
 
 #### Screenshot / Evidence
 > `![Feature Name](./docs/screenshots/branch_feature_name.png)`
 
----
-
-### Branch 5 — `feature/`
-
-| Field | Detail |
-|---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
-
-#### What Was Built
-
-
-#### Key Commits
-| Commit Message | What Changed |
-|---|---|
-| | |
-| | |
-| | |
-
-#### Problems Encountered & Resolved
-| Problem | Resolution |
-|---|---|
-| | |
-| | |
-
-#### Screenshot / Evidence
-> `![Feature Name](./docs/screenshots/branch_feature_name.png)`
-
----
-
-### Branch 6 — `feature/`
-
-| Field | Detail |
-|---|---|
-| **Branch Name** | |
-| **Feature Developed** | |
-| **Merged Into** | |
-| **Date Started** | |
-| **Date Merged** | |
-
-#### What Was Built
-
-
-#### Key Commits
-| Commit Message | What Changed |
-|---|---|
-| | |
-| | |
-| | |
-
-#### Problems Encountered & Resolved
-| Problem | Resolution |
-|---|---|
-| | |
-| | |
-
-#### Screenshot / Evidence
-> `![Feature Name](./docs/screenshots/branch_feature_name.png)`
+![BranchImage1](Animation1.png)
 
 ---
 
@@ -722,12 +659,10 @@ void Start()
 
 | Branch Name | Feature | Date Started | Date Merged | Status |
 |---|---|---|---|---|
-| `main` | Stable release | | | |
-| `feature/` | | | | |
-| `feature/` | | | | |
-| `feature/` | | | | |
-| `feature/` | | | | |
-| `feature/` | | | | |
+| `main` | Stable release | May 14 | Sep 21 | Active |
+| `animation` | Animation | May 24 | Jul 30 | |
+| `Experiment` | Animation | Aug 12 | Aug 22 | |
+| `Animation1` | Animation | Jul 30 | Aug 6 | |
 
 ---
 
