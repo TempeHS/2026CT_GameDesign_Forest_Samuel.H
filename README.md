@@ -73,7 +73,7 @@ The player is exploring a forest and needs to survive while avoiding dangers lik
 | Field | Detail |
 |---|---|
 | **Video Title** | Forest Explorer: Feature Walk Through |
-| **Link / Embed** |  |
+| **Link / Embed** | youtube.com/watch?v=1Zhzb3KNs50&feature=youtu.be |
 | **Duration** | 2:13 |
 | **Description** | Showcases my game design with many different features, like a parallax background, movement, animation, health bar, hud, death and respawn all play a part |
 
